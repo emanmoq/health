@@ -35,7 +35,7 @@ ul{
 }
 ul li{
     list-style-type: none;
-    margin-bottom:19px;
+    margin-bottom:0px;
 }
 body{
      font-size: 16px;
@@ -62,7 +62,7 @@ header{
 }
 .navbar-brand.logo{
  float:none;
- width:85px;
+ width:70px;
  margin-left:60px;
  margin-right:0;
 }
@@ -71,22 +71,20 @@ header{
 .navbar-expand-lg .navbar-nav .nav-link{
     font-size:1em;
     color:var(--font-color);
-    padding:20px;
+    padding:0 20px;
 
 }
 .navbar-expand-lg .navbar-nav  .nav-item.active .nav-link{
     color:var(--nav-active-color);
     font-weight: bold;
-
 }
-
 .navbar {
     width:80%;
     float: right;
+    padding:0;
 }
-.navbar-expand-lg .navbar-nav{
-    margin-top:10px;
-}
+
+
 .heroSection{
     position: relative;
 }
@@ -122,7 +120,6 @@ margin-top:20px;
     background-color: var(--maincolor);
     color:white;
     border:2px solid var(--maincolor);
-    position: absolute;
     border-radius: 10px;
 height: 55px;
 width: 190px;
@@ -444,9 +441,12 @@ i.fa-phone-volume{
     color:var(--mainFont-color);
     border:1px solid white;
     transition: all .5s;
+    margin-top:10px;
 }
 .scrollNav .contactBtn{
-    background-color: var(--maincolor);
+    background-color: white;
+    border:1px solid var(--maincolor);
+
 
 }
 .contactBtn:hover{
@@ -551,83 +551,136 @@ font-size:20px;
         font-size:12px
     }
     .owl-carousel .owl-stage-outer{
-    overflow: hidden;
-}
-    .heroImg img{
-        width:100%;
-        height: auto;
+        overflow: hidden;
+        padding: 30px 10px;
+
     }
+    .circle {
+        width: 100%;
+        height: 300px;}
+
     .hero{
-        padding:20px 0;
-        background-image:none;
-        background-image: linear-gradient(45deg ,#426CD9,#284BA6);
+        padding-top:100px;
+        padding-bottom:20px;
+        background-image: none;
+        
     }
+    .galleryBg{
+        width:100%;
+    }
+    .gallery{
+        padding:50px 0; 
+    }
+    .galleryCarusel{
+        position: relative;
+        top: auto;
+    }
+.scrollNav{
+    height: auto ;
+    padding-bottom: 10px;;
+}
+.subscribeBox .form-control{
+    width:100%;
+}
+.heroText h5 {
+    font-size: 3.555555555555555em;
+}
+   
+header {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+.mealImg{
+    width:91%;
+}
     .heroImg{
         margin-top:0;
     
+    }
+    .menu .sectionTitle{
+        margin-bottom:50px;
+    }
+    .menuSlider.owl-carousel .owl-nav {
+        bottom:-10%;
+    }
+    .menuSlider.owl-carousel .owl-nav button.owl-prev{
+        right:11%;
+    }
+    .menuSlider.owl-carousel .owl-nav button.owl-next {
+        left: 8%;
+    }
+
+    .menuDots{
+        right:0;
+        width: 100%;
+        text-align: center;
+        bottom: -14%;;
+
+    }
+    .menuBox {
+
+        box-shadow: 0 13px 16px rgb(114 157 57 / 10%);}
+    .galleryCarusel.owl-carousel .owl-nav{
+        right:0;
+        width:100%;
+        bottom:8%;
+    }
+    .owl-carousel .owl-nav button.owl-next{
+        left:0;
+    }
+    .sliderDots {
+        position: absolute;
+        right: 0;
+        bottom: -8%;
+        width: 100%;
+        text-align: center;
+    }
+    .contactBtn{
+        margin-top:0;
+        border:1px solid var(--maincolor)
     }
     .contactBtn{
         width:100%;
     float: none;
     }
-    .heroSection .subscribeBox{
+    .owl-dots{
+        bottom:-11%;
+    }
+    .ClientBox {
+        box-shadow: 0 12px 16px rgb(114 157 57 / 10%);}
+    .footerSubscribe .form-group{
         width:100%;
-        position: relative;
-        top:auto;
-        right:auto;
-        margin-top:20px;
+        margin-left:0;
     }
-    .navbar-expand-lg .navbar-nav .nav-link:before{
-        display:none;
-    }
-    .subscribeBtn{
-        height: 70px;
-        width: 113px;
-    }
+
 .services{
     padding:50px 0;
 }
 .sectionTitle{
     margin-bottom:50px;
 }
-.aboutUs .container{
-    padding:50px 20px;
-    border-radius: 0;;
-}
+
 .servicesBox{
     height:auto;
     padding:30px;
+    margin-bottom: 50px;;
 }
-.marginAbout{
-    margin-top: 20px;;
-}
+
 .clients{
     padding:50px 0;
 }
-.subscribe{
-    top:auto;
-}
-.subscribe .container{
-    border-radius: 0;
-    padding:30px 20px;;
-}
+
    footer{
-       padding:20px 0;
+       padding:50px 0;
    }
     .socialIcons{
         text-align: right;
         margin-top:20px;
         margin-bottom:20px;
     }
-    footer .logo{
-        float: none;
-    }
-    .socialIcons li{
-        float: none;
-    }
-    .requestBtn{
-        width:100%;
-    }
+
     .heroText{
         margin-top: 90px;
     }
@@ -639,12 +692,12 @@ font-size:20px;
         cursor: pointer;
         border-radius: 0;
         opacity: .7;
-        border:1px solid white;
+        border:1px solid var(--maincolor);
         text-align: center;
     }
  
     .mobileMenu i{
-        background-color: white;
+        background-color:var(--maincolor);
         border-radius: 2px;
         content: '';
         display: block;
@@ -658,19 +711,15 @@ font-size:20px;
 
     .navbar{
         width:100%;
-        margin-bottom:20px;
     }
     .nav-link{
         margin-bottom:10px;
         margin-top:10px;
     }
-    .contactUs{
-        padding:20px 0;
-    }
-    .marginBox{
-        margin-top:50px
-    }
-    
+header{
+    background-color:white;
+    z-index: 99999999999999;
+}
 }
 @media(min-width:768px) and (max-width:1023px){
     body{
@@ -678,20 +727,21 @@ font-size:20px;
     }
     .owl-carousel .owl-stage-outer{
         overflow: hidden;
-        padding:20px 5;
+        padding: 30px 10px;
+
     }
-    .clientBox{
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    }
-    .aboutUs .container{
-padding:50px 20px;
-border-radius: 0;;
-    }
-   .marginAbout{
-       margin-top:0;
-   }
+
+    .navbar-brand.logo {
+        float: none;
+        width: 49px;
+        margin-left: 15px;}
+        .navbar-expand-lg .navbar-nav .nav-link{
+            padding:10px;
+        }
+
    .clients{
-       padding:50px 0;
+       padding-top:50px;
+       padding-bottom:150px;
    }
    .sectionTitle{
        margin-bottom:20px;
@@ -699,49 +749,84 @@ border-radius: 0;;
    .services{
     padding:50px 0;
 }
-
-.aboutUs .container{
-    padding:50px 20px;
-    border-radius: 0;;
+.servicesBox{
+    margin-bottom:100px
 }
+.galleryBg{
+    width:97%;
+
+}
+.gallery{
+    padding-top:80px;
+    padding-bottom:50px;
+}
+.galleryCarusel {
+    position: absolute;
+    top: -40%;
+}
+.sectionTitle h4{
+    font-size: 3em;
+}
+.galleryCarusel.owl-carousel .owl-nav{
+    width:100%;
+    bottom:0;
+    
+}
+.sliderDots {
+    right: 25%;
+    bottom: -21px;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    right: 56;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    left:0;
+}
+.mealImg{
+    top: -15px;
+    left: 10px;
+    width:90%;
+}
+.menuBox{
+    padding: 230px 12px 50px 12px;
+    box-shadow: 0 12px 16px rgb(114 157 57 / 10%);
+}
+.ClientBox {
+    box-shadow: 0 12px 16px rgb(114 157 57 / 10%);}
+    .menuSlider .owl-nav{
+        bottom:-17%
+    }
+    .menuSlider.owl-carousel .owl-nav button.owl-prev {
+        right: 38%;
+    }
+    .menuSlider.owl-carousel .owl-nav button.owl-next {
+        left: 37%;
+    }
+
 footer{
     padding:20px 0;
 }
-.subscribe{
-    top:auto;
-    margin-bottom:20px;
+.subscribeBtn{
+    width:150px;
 }
 .sectionTitle{
     margin-bottom:50px;
 }
-.aboutUs .container{
-    padding:50px 20px;
-    border-radius: 0;;
+header{
+    padding-top:50px;
 }
     .hero{
-        padding:20px 0;
+padding:100px 0;
     }
-  
-    .socialIcons{
-        text-align: center;
-    }
-    .socialIcons li{
-        float: none;
-    }
-  .marginBox{
-      margin-top:0;
-  }
+
     .heroText{
         margin-top: 20px;
     }
-
-    .subscribeBtn{
-        width:140px;
+    .heroText h5{
+        font-size:3.5em;
     }
 
-    .marginForm{
-        margin-left:24px;
-    }
     .navbar-expand-lg .navbar-collapse{
         display: flex;
         flex-basis: auto;
@@ -752,14 +837,18 @@ footer{
          } 
     .navbar{
         width:70%;
-        margin-top:20px;
+        margin-top:0;
+        padding:0;
     }
-         .navbar-nav {
+    
+    .navbar-expand-lg .navbar-nav{
             display: -ms-flexbox;
-            display: flex;}
+            display: flex;
+        margin-top: 0;}
             .navbar-expand-lg .navbar-nav {
                 -ms-flex-direction: row;
                 flex-direction: row;
             }
+
     
 }

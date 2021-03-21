@@ -16,15 +16,20 @@ jQuery(function ($) {
     nav: true,
     margin:45,
     dotsContainer: '.menuDots',
- resonsive:{
+    responsive:{
    0:{
      items:1,
+     margin:0
    },
    600:{
     items:2,
+    margin:30
   },
-  1000:{
-    items:0,
+  1025:{
+    items:3,
+    margin:45,
+
+
   }
  }
   });
@@ -35,7 +40,7 @@ jQuery(function ($) {
     nav: false,
     margin:45,
     dots:true,
- resonsive:{
+ responsive:{
    0:{
      items:1,
    },
@@ -43,7 +48,7 @@ jQuery(function ($) {
     items:2,
   },
   1000:{
-    items:0,
+    items:3,
   }
  }
   });
