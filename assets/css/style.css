@@ -107,6 +107,10 @@ margin-top:20px;
     margin-bottom:10px;
     font-weight: bold;
 }
+.subscribeForm .gfield_label{
+    display: none;
+    position: absolute
+}
 .subscribeBox .form-control{
     background-color: rgba(63, 63, 63, .06);
     width:70%;
@@ -131,6 +135,7 @@ transition: all .5s;
     transition:  all .5s;
 
 }
+.
 .services{
     padding-top:160px;
     padding-bottom:250px;
@@ -468,13 +473,17 @@ footer{
     padding-top:100px;
     padding-bottom:35px;
 }
-.footerSubscribe .form-group{
+
+.footerSubscribe .form-group .form-control{
+    width:100%;
+}
+.footerSubscribeBtn{
+    display: inline-block;
+}
+.footerSubscribe .gform_body{
     display: inline-block;
     width:55%;
     margin-left:20px;
-}
-.footerSubscribe .form-group .form-control{
-    width:100%;
 }
 .socialIcons li{
     display: inline-block;
